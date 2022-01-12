@@ -18,7 +18,7 @@
 
     -ACCENTS :
 
-    -GRAYS : #555
+    -GRAYS : #555 , #333 , #fdf2e9
 
 --- 05 SHADOWS ---
     
@@ -47,14 +47,79 @@ body {
   color: #555;
 }
 
+.section-hero {
+  background-color: #fdf2e9;
+  padding: 9.6rem 0;
+}
+
 .hero {
   display: grid;
   max-width: 130rem;
   margin: 0 auto;
   grid-template-columns: 1fr 1fr;
+  gap: 9.6rem;
+  align-items: center;
+}
+
+.hero-heading-primary {
+  font-size: 5.2rem; /* 5.2 rem = 52px */
+  font-weight: 700;
+  line-height: 1.05;
+  color: #333;
+  letter-spacing: -0.6px;
+  margin-bottom: 3.2rem;
+}
+
+.hero-description {
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 4.8rem;
+}
+
+.hero-btn:link,
+.hero-btn:visited {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #e67e22;
+  color: #fff;
+  font-size: 2rem;
+  padding: 1.6rem;
+  border-radius: 0.9rem;
+  transition: all 300ms;
+}
+
+.hero-btn--full:link,
+.hero-btn--full:visited {
+  background-color: #e67e22;
+  color: #fff;
+}
+
+.hero-btn--full:hover,
+.hero-btn--full:active {
+  background-color: #cf711f;
+}
+
+.hero-btn--outline:link,
+.hero-btn--outline:visited {
+  background-color: #fff;
+  color: #555;
+}
+
+.hero-btn--outline:hover,
+.hero-btn--outline:active {
+  background-color: #fdf2e9;
+  box-shadow: inset 0 0 0 3px #fff;
 }
 
 .hero-img {
   width: 100%;
   height: 100%;
+}
+
+.margin-right-sm {
+  margin-right: 1.6rem !important;
+}
+
+.margin-left-sm {
+  margin-left: 1.6rem !important;
 }
