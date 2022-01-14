@@ -13,22 +13,22 @@
     -PRIMARY : #e67e22
 
     -TINTS : #fdf2e9
-
-    -SHADES : #cf711f
-
-    -ACCENTS :
-
-    -GRAYS : #555 , #333 , #fdf2e9
-
---- 05 SHADOWS ---
     
---- 06 BORDER RADIUS ---
-
---- 07 WHITE SPACE ---
+    -SHADES : #cf711f
+    
+    -ACCENTS :
+    
+    -GRAYS : #555 , #333 , #fdf2e9
+    
+    --- 05 SHADOWS ---
+    
+    --- 06 BORDER RADIUS ---
+    
+    --- 07 WHITE SPACE ---
     -SPACING SYSTEM (px) :
-      2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
-
-*/
+    2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+    
+    */
 
 * {
   margin: 0;
@@ -47,19 +47,8 @@ body {
   color: #555;
 }
 
-.section-hero {
-  background-color: #fdf2e9;
-  padding: 9.6rem 0;
-}
-
-.hero {
-  display: grid;
-  max-width: 130rem;
-  margin: 0 auto;
-  grid-template-columns: 1fr 1fr;
-  gap: 9.6rem;
-  align-items: center;
-}
+/*****************************/
+/* GENRAL COMPONENTS */
 
 .hero-heading-primary {
   font-size: 5.2rem; /* 5.2 rem = 52px */
@@ -68,12 +57,6 @@ body {
   color: #333;
   letter-spacing: -0.6px;
   margin-bottom: 3.2rem;
-}
-
-.hero-description {
-  font-size: 2rem;
-  line-height: 1.6;
-  margin-bottom: 4.8rem;
 }
 
 .hero-btn:link,
@@ -110,6 +93,29 @@ body {
 .hero-btn--outline:active {
   background-color: #fdf2e9;
   box-shadow: inset 0 0 0 3px #fff;
+}
+
+/*****************************/
+
+.section-hero {
+  background-color: #fdf2e9;
+  padding: 4.8rem 0 9.6rem 0;
+}
+
+.hero {
+  display: grid;
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+  grid-template-columns: 1fr 1fr;
+  gap: 9.6rem;
+  align-items: center;
+}
+
+.hero-description {
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 4.8rem;
 }
 
 .hero-img {
@@ -157,4 +163,20 @@ body {
 .hero-delivered-text span {
   font-weight: 700;
   color: #cf711f;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fdf2e9;
+  height: 9.6rem;
+  padding: 0 4.8rem;
+}
+
+.header-logo {
+  height: 2.2rem;
+}
+
+.header-navbar {
 }
