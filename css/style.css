@@ -224,7 +224,6 @@ body {
 
 .section-how {
   padding: 9.6rem 0;
-  background-color: orangered;
 }
 
 .grid {
@@ -250,4 +249,27 @@ body {
 
 .grid--4-cols {
   grid-template-columns: repeat(4, 1fr);
+}
+
+.how-heading-secoundry {
+  font-weight: 700;
+  color: #333;
+  letter-spacing: -0.5;
+  font-size: 4.4rem;
+  line-height: 1.2;
+  margin-bottom: 9.6rem;
+}
+
+.how-step-img {
+  width: 50%;
+}
+
+.how-subheading {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #cf711f;
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+  letter-spacing: 0.75px;
 }
