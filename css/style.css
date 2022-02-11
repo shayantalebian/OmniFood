@@ -550,3 +550,44 @@ strong {
 .gallery-item img:hover {
   transform: scale(1.1);
 }
+
+.section-pricing {
+  padding: 9.6rem 0;
+}
+
+.pricing-plan-name {
+  color: #cf711f;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.75;
+  font-size: 2rem;
+  margin-bottom: 3.2rem;
+}
+
+.pricing-plan-price {
+  font-size: 6.2rem;
+  font-weight: 600;
+  column-rule: #333;
+  margin-bottom: 1.6rem;
+}
+
+.pricing-plan-price span {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.pricing-plan-text {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: #6f6f6f;
+}
+
+.pricing-plan-header {
+  text-align: center;
+  margin-bottom: 4.8rem;
+}
+
+.plan-sing-up {
+  text-align: center;
+  margin-top: 4.8rem;
+}
