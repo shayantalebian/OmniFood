@@ -237,6 +237,10 @@ body {
   grid-template-columns: repeat(2, 1fr);
 }
 
+.grid:not(:last-child) {
+  margin-bottom: 9.6rem !important;
+}
+
 .grid--center-v {
   align-items: center;
 }
