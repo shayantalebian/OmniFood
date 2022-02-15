@@ -66,6 +66,10 @@ body {
   margin-bottom: 3.2rem;
 }
 
+.grid:not(:last-child) {
+  margin-bottom: 9.6rem;
+}
+
 .hero-btn:link,
 .hero-btn:visited {
   display: inline-block;
@@ -234,11 +238,6 @@ body {
   display: grid;
   column-gap: 6.2rem;
   row-gap: 9.6rem;
-  grid-template-columns: repeat(2, 1fr);
-}
-
-.grid:not(:last-child) {
-  margin-bottom: 9.6rem !important;
 }
 
 .grid--center-v {
@@ -626,4 +625,32 @@ strong {
   background-color: #ffd43b;
   padding: 0.8rem 8rem;
   transform: rotate(45deg);
+}
+
+.feature-icon {
+  color: #e67e22;
+  height: 3.2rem;
+  background-color: #fdf2e9;
+  width: 3.2rem;
+  border-radius: 50%;
+  padding: 1.6rem;
+  margin-bottom: 3.2rem;
+}
+
+.feature-title {
+  font-size: 2.4rem;
+  color: #333;
+  font-weight: 700;
+  margin-bottom: 1.6rem;
+}
+
+.feature-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+
+.plan-deatail {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  text-align: center;
 }
