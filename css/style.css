@@ -266,7 +266,7 @@ body {
 .how-heading-secoundry {
   font-weight: 700;
   color: #333;
-  letter-spacing: -0.5;
+  letter-spacing: -0.5px;
   font-size: 4.4rem;
   line-height: 1.2;
   margin-bottom: 9.6rem;
@@ -671,6 +671,11 @@ strong {
   height: 50rem;
 }
 
+.cta .how-heading-secoundry {
+  color: #45260a;
+  margin-bottom: 3.2rem;
+}
+
 .cta-img-box {
   background-image: linear-gradient(
       to right bottom,
@@ -683,4 +688,19 @@ strong {
 }
 
 .cta-text-box {
+  color: #45260a;
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+}
+
+.cta-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 4.8rem;
+}
+
+.cta-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 3.2rem;
+  row-gap: 2.4rem;
 }
