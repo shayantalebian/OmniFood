@@ -289,6 +289,10 @@ body {
   grid-template-columns: repeat(4, 1fr);
 }
 
+.grid--5-cols {
+  grid-template-columns: repeat(5, 1fr);
+}
+
 .how-heading-secoundry {
   font-weight: 700;
   color: #333;
@@ -763,4 +767,8 @@ strong {
 .btn__form:hover {
   color: #555;
   background: #fff;
+}
+
+.footer {
+  padding: 9.6rem 0;
 }
