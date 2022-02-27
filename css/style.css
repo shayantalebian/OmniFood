@@ -52,7 +52,6 @@ body {
   font-family: "Rubik", sans-serif;
   line-height: 1;
   font-weight: 400;
-  background: #fff;
   color: #555;
 }
 
@@ -941,4 +940,26 @@ strong {
 
 .grid--footer {
   grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+}
+
+/* rem and em do NOT depend on html font-size in media queries!
+Instead, 1rem = 1em = 16px 
+*/
+
+/* BELOW 133px (smaller desktops) */
+@media (max-width: 84em) {
+  .hero {
+    max-width: 120rem;
+  }
+
+  .hero-heading-primary {
+    font-size: 4.4rem;
+  }
+
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.6rem;
+    padding: 1.6rem;
+  }
 }
