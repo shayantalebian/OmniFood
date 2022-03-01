@@ -163,7 +163,7 @@ body {
   letter-spacing: 1.5px;
 }
 
-.hero-heading-primary {
+.heading-primary {
   font-size: 5.2rem; /* 5.2 rem = 52px */
   font-weight: 700;
   line-height: 1.05;
@@ -328,7 +328,7 @@ body {
 .header-main-nav-list {
   list-style: none;
   display: flex;
-  gap: 3.2rem;
+  gap: 4.8rem;
   align-items: center;
 }
 
@@ -399,7 +399,7 @@ body {
   grid-template-columns: repeat(5, 1fr);
 }
 
-.how-heading-secoundry {
+.heading-secondary {
   font-weight: 700;
   color: #333;
   letter-spacing: -0.5px;
@@ -946,13 +946,13 @@ strong {
 Instead, 1rem = 1em = 16px 
 */
 
-/* BELOW 133px (smaller desktops) */
+/* BELOW 1344px (smaller desktops) */
 @media (max-width: 84em) {
   .hero {
     max-width: 120rem;
   }
 
-  .hero-heading-primary {
+  .heading-primary {
     font-size: 4.4rem;
   }
 
@@ -961,5 +961,41 @@ Instead, 1rem = 1em = 16px
     grid-template-columns: repeat(2, 1fr);
     gap: 1.6rem;
     padding: 1.6rem;
+  }
+}
+
+/* BELOW 1200px (Landscape Tablets) */
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .heading-secondary {
+    font-size: 3.6rem;
+  }
+
+  .heading-tertiary {
+    font-size: 2.4rem;
+  }
+
+  .grid {
+    column-gap: 4.8rem;
+    row-gap: 6.4rem;
+  }
+
+  .section-header {
+    padding: 0 3.2rem;
+  }
+
+  .hero {
+    gap: 4.8rem;
+  }
+
+  .header-main-nav-list {
+    gap: 3.2rem;
+  }
+
+  .testimonials-container {
+    padding: 9.6rem 3.2rem;
   }
 }
