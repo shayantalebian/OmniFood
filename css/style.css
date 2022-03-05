@@ -597,6 +597,7 @@ strong {
   display: flex;
   align-items: center;
   gap: 1.6rem;
+  line-height: 1.2;
 }
 .meal-list-icon {
   width: 3rem;
@@ -997,5 +998,65 @@ Instead, 1rem = 1em = 16px
 
   .testimonials-container {
     padding: 9.6rem 3.2rem;
+  }
+}
+
+/* BELOW 940px (Tablets) */
+@media (max-width: 59em) {
+  html {
+    font-size: 50%;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 0 8rem;
+    gap: 6.4rem;
+  }
+
+  .hero-img {
+    width: 60%;
+    height: 60%;
+  }
+
+  .hero-text-box,
+  .hero-img-box {
+    text-align: center;
+  }
+
+  .hero-delivered-meals {
+    justify-content: center;
+    margin-top: 3.2rem;
+  }
+
+  .featured-logo img {
+    height: 2.4rem;
+  }
+
+  .how-step-number {
+    font-size: 7.4rem;
+  }
+
+  .meals-content {
+    padding: 2.4rem 3.2rem 3.2rem 3.2rem;
+  }
+
+  .section-testimonials {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .cta {
+    grid-template-columns: 3fr 2fr;
+  }
+
+  .cta-form {
+    grid-template-columns: 1fr;
+  }
+
+  .btn__form {
+    margin-top: 1.2rem;
   }
 }
