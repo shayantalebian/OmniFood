@@ -46,6 +46,7 @@
 html {
   font-size: 62.5%; /* 10px / 16px = 0.625 ==> 62.5% */
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -53,6 +54,7 @@ body {
   line-height: 1;
   font-weight: 400;
   color: #555;
+  overflow-x: hidden;
 }
 
 /* styles for Loading object */
@@ -318,6 +320,7 @@ body {
   align-items: center;
   background-color: #fdf2e9;
   height: 9.6rem;
+  position: relative;
   padding: 0 4.8rem;
 }
 
@@ -943,6 +946,24 @@ strong {
   grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
 }
 
+.btn--mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+}
+
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #333;
+}
+
+/* .icon-mobile-nav:last-child */
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+
 /* rem and em do NOT depend on html font-size in media queries!
 Instead, 1rem = 1em = 16px 
 */
@@ -1058,5 +1079,55 @@ Instead, 1rem = 1em = 16px
 
   .btn__form {
     margin-top: 1.2rem;
+  }
+
+  .btn--mobile-nav {
+    display: block;
+  }
+
+  .header-navbar {
+    background: rgba(255, 255, 255, 0.97);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+
+    transform: translateY(-100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: all 1000ms ease-in;
+
+    opacity: 0;
+    pointer-events: none; /* In order to disconect keyboard from this element */
+    visibility: hidden;
+  }
+
+  .nav-open .header-navbar {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateY(0%);
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .header-main-nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  .header-main-nav-link:link,
+  .header-main-nav-link:visited {
+    font-size: 3rem;
   }
 }
