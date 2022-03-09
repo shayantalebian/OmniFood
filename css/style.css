@@ -1130,4 +1130,8 @@ Instead, 1rem = 1em = 16px
   .header-main-nav-link:visited {
     font-size: 3rem;
   }
+
+  .loader-text {
+    margin-top: 35rem;
+  }
 }
