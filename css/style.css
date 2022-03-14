@@ -951,6 +951,7 @@ strong {
   background: none;
   cursor: pointer;
   display: none;
+  z-index: 999;
 }
 
 .icon-mobile-nav {
