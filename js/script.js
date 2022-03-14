@@ -1,9 +1,14 @@
+// Loading
 window.addEventListener("load", function () {
   const loader = this.document.querySelector(".loader");
   loader.className += " hidden";
 });
 
-///////////////////////////////////////////////////////////
+// Make the copyright year up to date
+const yearEl = document.querySelector("#year");
+const newYear = new Date().getFullYear();
+yearEl.textContent = newYear;
+
 // Fixing flexbox gap property missing in some Safari versions
 function checkFlexGap() {
   var flex = document.createElement("div");
